@@ -1,7 +1,7 @@
 .footer {
-  background: #f53232;
-  padding-top: 42px;
-  padding-bottom: 42px;
+  background: #ffb84d;
+  padding-top: 53px;
+  padding-bottom: 41px;
 
   @include media(desktop) {
     padding-top: 46px;
@@ -11,7 +11,7 @@
 
 .footer-nav {
   text-align: center;
-  margin-bottom: 18px;
+  margin-bottom: 31px;
 
   @include media(desktop) {
     margin-bottom: 50px;
@@ -32,24 +32,34 @@
 }
 
 .footer-link {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 20px;
   line-height: 1.5;
-  color: #4b3b36;
+  background: linear-gradient(180deg, #8d46e2 0%, #3c1f95 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   transition: color 0.3s ease-in-out;
 
   &:hover,
   &:focus {
   }
+
+  @include media(desktop) {
+    font-size: 26px;
+  }
 }
 
 .footer-text {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.5;
-  color: #4b3b36;
+  background: linear-gradient(180deg, #8d46e2 0%, #3c1f95 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
   @include media(desktop) {
     text-align: center;

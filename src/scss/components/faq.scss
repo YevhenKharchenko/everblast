@@ -1,0 +1,120 @@
+.faq-section {
+  padding-bottom: 78px;
+
+  @include media(desktop) {
+    padding-bottom: 140px;
+  }
+}
+
+.faq-container {
+  padding-left: 0;
+  padding-right: 0;
+
+  @include media(desktop) {
+    padding-left: 80px;
+    padding-right: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    position: relative;
+  }
+}
+
+.faq-bg-img {
+  margin-bottom: 22px;
+
+  @include media(desktop) {
+    margin-bottom: 0;
+  }
+}
+
+.faq-content-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include media(desktop) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  @include media(desktop) {
+    gap: 20px;
+  }
+}
+
+.faq-list-item {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.faq-top-text-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 19px;
+  border: 1px solid #f53232;
+  border-radius: 16px;
+  padding: 14.5px 10px;
+}
+
+.faq-toggle-symbol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.faq-icon {
+  transform: rotate(180deg);
+}
+
+.faq-btn-text {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #f53232;
+  text-align: left;
+}
+
+.faq-bottom-text {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #4b3b36;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.is-visible {
+  border: 1px solid #4b3b36;
+  border-radius: 16px;
+  padding: 10px;
+  margin-top: 4px;
+  max-height: 120px;
+  opacity: 1;
+
+  @include media(desktop) {
+    max-height: 68px;
+  }
+}
+
+.faq-list-item.faq-open .faq-toggle-symbol {
+  transform: rotate(180deg);
+}

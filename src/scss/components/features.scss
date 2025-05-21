@@ -45,6 +45,12 @@
 .features-slide {
   padding: 12px;
   max-width: 197px;
+
+  @include media(desktop) {
+    &:last-child {
+      padding-right: 10px;
+    }
+  }
 }
 
 .features-picture-wrapper {

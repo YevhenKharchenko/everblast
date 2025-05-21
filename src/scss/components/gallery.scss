@@ -1,19 +1,19 @@
 .gallery-section {
-  padding-bottom: 78px;
-
   @include media(desktop) {
-    padding-bottom: 150px;
   }
 }
 
 .gallery-section-wrapper {
+  padding-bottom: 80px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
 
   @include media(desktop) {
+    padding-bottom: 140px;
     max-width: 1440px;
+    position: relative;
   }
 }
 
@@ -59,8 +59,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
   transition: transform 0.3s ease-in-out;
 
   &:active {
@@ -86,7 +86,7 @@
 .dots {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 16px;
 }
 
 .dot {
@@ -94,10 +94,43 @@
   height: 16px;
   transition: transform 0.3s ease-in-out;
   border-radius: 100%;
-  background: rgba(120, 228, 250, 0.5);
+  background: rgba(255, 184, 77, 0.5);
   cursor: pointer;
 }
 
 .dot.active {
-  background: #78e4fa;
+  background: #ffb84d;
+}
+
+.gallery-big-bubble-img {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    bottom: 12px;
+    right: 93px;
+  }
+}
+
+.gallery-medium-bubble-img {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    bottom: 97px;
+    left: 190px;
+  }
+}
+
+.gallery-small-bubble-img {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    bottom: 97px;
+    left: 272px;
+  }
 }
